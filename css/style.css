@@ -7,9 +7,14 @@
 
   - Font Weight
   Default: 1
+  Small: 1.05
+  Paragraph Default: 1.6
 
   - Line Height
   Default: 400
+  Medium: 500
+  Semi-Bold: 600
+  Bold: 700
 
 --- 02 COLORS
   - Primary: #e67e22
@@ -21,6 +26,7 @@
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
+  Default: 9px
 
 --- 07 WHITESPACE
 
@@ -49,22 +55,9 @@ body {
   color: #555;
 }
 
-/* -------------------- */
-/* --- SECTION HERO --- */
-/* -------------------- */
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0;
-}
-
-.hero-container {
-  max-width: 130rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 9.6rem;
-}
+/* ---------------- */
+/* --- REUSABLE --- */
+/* ---------------- */
 
 .heading-primary {
   font-size: 5.2rem;
@@ -75,14 +68,8 @@ body {
   margin-bottom: 3.2rem;
 }
 
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
-}
-
-.hero-img {
-  max-width: 100%;
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }
 
 .btn:link,
@@ -119,8 +106,87 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-.margin-right-sm {
-  margin-right: 1.6rem !important;
+/* ---------------- */
+/* ---- HEADER ---- */
+/* ---------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* -------------------- */
+/* ---- NAVIGATION ---- */
+/* -------------------- */
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.header-nav-link:link,
+.header-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.header-nav-link:hover,
+.header-nav-link:active {
+  color: #cf711f;
+}
+
+.header-nav-link.nav-cta:link,
+.header-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.header-nav-link.nav-cta:hover,
+.header-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* -------------------- */
+/* --- SECTION HERO --- */
+/* -------------------- */
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 9.6rem 0;
+}
+
+.hero-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 9.6rem;
+  padding: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
 }
 
 .delivered-meals {
