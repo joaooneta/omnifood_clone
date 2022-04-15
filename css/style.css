@@ -26,7 +26,7 @@
   - Tints: #fdf2e9, #fae5d3
   - Shades: #cf711f,
   - Accents:
-  - Greys: #555, #333 
+  - Greys: #555, #333, #888 
 
 --- 05 SHADOWS
 
@@ -274,6 +274,34 @@ body {
 .delivered-number {
   color: #cf711f;
   font-weight: 700;
+}
+
+/* --------------------------- */
+/* --- SECTION FEATURED-IN --- */
+/* --------------------------- */
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.logo {
+  height: 3.2rem;
 }
 
 /* ---------------------------- */
