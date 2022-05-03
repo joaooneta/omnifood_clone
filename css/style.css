@@ -573,6 +573,8 @@ strong {
 
 .testimonial-img {
   width: 6.4rem;
+  margin-bottom: 1.2rem;
+  border-radius: 50%;
 }
 
 .testimonial-text {
