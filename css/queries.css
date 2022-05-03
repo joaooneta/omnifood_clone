@@ -54,9 +54,9 @@
 }
 
 /* -------------------------------- */
-/* ---- BELLOW 944px (Tablets) ---- */
+/* ---- BELLOW 956px (Tablets) ---- */
 /* -------------------------------- */
-@media (max-width: 59em) {
+@media (max-width: 60em) {
   html {
     font-size: 50%;
   }
@@ -79,5 +79,37 @@
   .delivered-meals {
     justify-content: center;
     margin-top: 3.2rem;
+  }
+
+  .logo {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-form {
+    margin-top: 1.2rem;
   }
 }
