@@ -38,3 +38,26 @@ allLinks.forEach(function (link) {
     }
   });
 });
+
+//Sticky navigation
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const entrie = entries[0];
+    console.log(entrie);
+    if (entrie.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (entrie.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(sectionHeroEl);
